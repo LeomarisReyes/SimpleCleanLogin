@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SimpleCleanLogin.Views.CreateAccountPage"
+    xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    BackgroundColor="#fdfbf6">
+    <ContentPage.Content>
+        <!-- Main Layout-->
+       <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="20" ColumnDefinitions="*,*" ColumnSpacing="20" VerticalOptions="CenterAndExpand" Padding="30,0">
+
+           <!-- Title-->
+           <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" Text="Create an account"/>
+           <!-- Rounded Profile imagen-->
+           <Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="White" VerticalOptions="Start" HorizontalOptions="Center" WidthRequest="150" HeightRequest="150" CornerRadius="75" HasShadow="False" Padding="0" IsClippedToBounds="True">
+                <Image Source="Profile" Aspect="AspectFill"/>
+           </Frame>
+           <Button Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#fd684d" HeightRequest="54" WidthRequest="54" CornerRadius="27" TranslationX="65" ImageSource="Camera" HorizontalOptions="Center" VerticalOptions="End"/>
+
+           <!-- Basic information-->
+           <!-- First name-->
+           <Label Grid.Row="2" Grid.Column="0" Text="First name" TextColor="#787878" FontSize="15"/>
+           <telerikInput:RadEntry Grid.Row="3" Grid.Column="0" BorderStyle="{StaticResource EntryBorderStyle}" HeightRequest="40" BackgroundColor="#fdfbf6"/>
+           <!-- Last name-->
+           <Label Grid.Row="2" Grid.Column="1" Text="Last name" TextColor="#787878" FontSize="15"/>
+           <telerikInput:RadEntry Grid.Row="3" Grid.Column="1" BorderStyle="{StaticResource EntryBorderStyle}" HeightRequest="40" BackgroundColor="#fdfbf6"/>
+           <!-- Email-->
+           <Label Grid.Row="4" Grid.Column="0" Text="Email" TextColor="#787878" FontSize="15" />
+           <telerikInput:RadEntry Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" BorderStyle="{StaticResource EntryBorderStyle}" HeightRequest="40" WatermarkText="yourname@domain.com" BackgroundColor="#fdfbf6"/>
+           <!-- Password-->
+           <Label Grid.Row="6" Grid.Column="0" Text="Password" TextColor="#787878" FontSize="15" />
+           <telerikInput:RadEntry Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" IsPassword="True" BorderStyle="{StaticResource EntryBorderStyle}" HeightRequest="40" WatermarkText="******" BackgroundColor="#fdfbf6"/>
+           <Label Grid.Row="8" Text="Confirm Password" TextColor="#787878" FontSize="15" />
+           <telerikInput:RadEntry Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" IsPassword="True" BorderStyle="{StaticResource EntryBorderStyle}" HeightRequest="40" WatermarkText="******" BackgroundColor="#fdfbf6"/>
+           <!-- Phone number-->
+           <Label Grid.Row="10" Grid.Column="0" Text="Phone number" TextColor="#787878" FontSize="15" />
+           <Picker Grid.Row="11" Grid.Column="0" Margin="0,0,100,0">
+               <Picker.ItemsSource>
+                 <x:Array Type="{x:Type x:String}"> 
+                   <x:String>+91</x:String>
+                   <x:String>+92</x:String>
+                 </x:Array>
+              </Picker.ItemsSource>
+           </Picker> 
+           <telerikInput:RadEntry Grid.Row="11" Grid.Column="1" Margin="-100,0,0,0" BorderStyle="{StaticResource EntryBorderStyle}" HeightRequest="40" WatermarkText="(XXX) XXX-XXXX" BackgroundColor="#fdfbf6"/>
+
+           <!-- Register button-->
+           <Button Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#fd684d" Text="Register" TextColor="White" CornerRadius="20" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+
+           <Label Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="2" FontAttributes="Bold" HorizontalTextAlignment="Center" >
+                <Label.FormattedText>
+                  <FormattedString>
+                      <Span Text="Already have an account? "/>
+                      <Span Text="Log in" TextColor="#fd684d"/>
+                  </FormattedString>
+                </Label.FormattedText>
+            </Label>
+       </Grid>
+    </ContentPage.Content>
+</ContentPage>

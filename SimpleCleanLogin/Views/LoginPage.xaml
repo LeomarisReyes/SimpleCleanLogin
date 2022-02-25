@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="SimpleCleanLogin.Views.LoginPage"
+    xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+    BackgroundColor="#fdfbf6">
+    <ContentPage.Content>
+        <!-- Main Layout-->
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25" VerticalOptions="CenterAndExpand" Padding="30,0">
+            <!--Step One-->
+            <!-- Logo-->
+            <Image Grid.Row="0" Source="Logo" HeightRequest="150" WidthRequest="150" Aspect="AspectFit"/>
+            <!-- Main title-->
+            <Label Grid.Row="1" FontAttributes="Bold" TextColor="Silver" FontSize="30"  HorizontalTextAlignment="Center" Text="Changing the Way the&#10;World works for good"/>
+             
+            <!--Step Two-->
+            <!-- Fields-->
+            <Label Grid.Row="2" Text="Email" TextColor="#a6a5a0" FontSize="15" />  
+            <telerikInput:RadEntry Grid.Row="3" BorderStyle="{StaticResource EntryBorderStyle}" WatermarkText="yourname@domain.com" HeightRequest="40" BackgroundColor="#fdfbf6" /> 
+          
+            <Label Grid.Row="4" Text="Password" TextColor="#a6a5a0" FontSize="15" />
+            <telerikInput:RadEntry Grid.Row="5" BorderStyle="{StaticResource EntryBorderStyle}" IsPassword="True" WatermarkText="******" HeightRequest="40" BackgroundColor="#fdfbf6"/> 
+
+            <!-- Forget password label-->
+            <Label Grid.Row="6" Text="Forgot your password?" FontAttributes="Bold" FontSize="15" HorizontalOptions="End" />
+
+            <Button Grid.Row="7" BackgroundColor="#fd684d" Text="Log in" TextColor="White" CornerRadius="20" FontSize="15" FontAttributes="Bold" HorizontalOptions="FillAndExpand"/>
+
+            <Label Grid.Row="8" FontAttributes="Bold" HorizontalTextAlignment="Center" >
+                <Label.FormattedText>
+                  <FormattedString>
+                      <Span Text="Don't have an account? "/>
+                      <Span Text="Register" TextColor="#fd684d"/>
+                  </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

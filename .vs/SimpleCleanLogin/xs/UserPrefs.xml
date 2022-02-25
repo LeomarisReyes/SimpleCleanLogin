@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{A26BF72E-4A23-423E-AA07-8DF809DD8CE5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SimpleCleanLogin/App.xaml">
+    <Files>
+      <File FileName="SimpleCleanLogin/App.xaml.cs" Line="13" Column="43" />
+      <File FileName="SimpleCleanLogin/Views/LoginPage.xaml" />
+      <File FileName="SimpleCleanLogin/Views/CreateAccountPage.xaml" />
+      <File FileName="SimpleCleanLogin/Views/CreateAccountPage.xaml.cs" />
+      <File FileName="../../.nuget/packages/xamarin.essentials/1.7.1/readme.txt" />
+      <File FileName="SimpleCleanLogin/App.xaml" Line="15" Column="15" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SimpleCleanLogin" expanded="True" selected="True">
+            <Node name="SimpleCleanLogin" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="CreateAccountPage.xaml" expanded="True" />
+              </Node>
+              <Node name="App.xaml" expanded="True" />
+            </Node>
+            <Node name="SimpleCleanLogin.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="SimpleCleanLogin.iOS" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SimpleCleanLogin.Android FirstBuild="True" PreferredExecutionTarget="Android.lrr_-_pixel_2" />
+  <MonoDevelop.Ide.ItemProperties.SimpleCleanLogin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F2F79E18-52A0-4279-B7A1-E4E905F7CD6A" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
